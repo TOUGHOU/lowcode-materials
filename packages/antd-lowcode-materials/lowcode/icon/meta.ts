@@ -30,7 +30,6 @@ export default {
       name: 'size',
       description: '大小',
       propType: 'number',
-      defaultValue: 20,
     },
     {
       name: 'color',
@@ -45,13 +44,11 @@ export default {
         tip: '图标旋转角度',
       },
       propType: 'number',
-      defaultValue: 0,
     },
     {
       name: 'spin',
       title: { label: '旋转动画', tip: '是否有旋转动画' },
       propType: 'bool',
-      defaultValue: false,
     },
     {
       name: 'onClick',

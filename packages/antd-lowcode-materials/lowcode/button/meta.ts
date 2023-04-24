@@ -219,17 +219,7 @@ export default {
             componentName: 'SlotSetter',
             initialValue: {
               type: 'JSSlot',
-              value: [
-                {
-                  componentName: 'Icon',
-                  props: {
-                    type: 'SmileOutlined',
-                    size: 20,
-                    rotate: 0,
-                    spin: false,
-                  },
-                },
-              ],
+              value: [],
             },
           },
         },

@@ -6,7 +6,7 @@ export default [
       componentName: 'Icon',
       props: {
         type: 'SmileOutlined',
-        size: 20,
+        size: 14,
       },
     },
   },

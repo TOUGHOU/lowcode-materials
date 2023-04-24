@@ -193,6 +193,15 @@ export default {
           propType: 'bool',
           defaultValue: false,
           setter: 'BoolSetter',
+          extraProps: {
+            setValue: (target: any, value: boolean) => {
+              if (value) {
+                target.node.setPropValue('format', 'YYYY-MM-DD hh:mm:ss');
+              } else {
+                target.node.setPropValue('format', 'YYYY-MM-DD');
+              }
+            },
+          },
         },
       ],
     },

@@ -37,6 +37,18 @@ export default {
       },
       propType: { type: 'oneOf', value: ['left', 'right'] },
     },
+    {
+      name: 'children',
+      title: '内容',
+      setter: [
+        'StringSetter',
+        'SlotSetter',
+        'VariableSetter',
+      ],
+    },
   ],
-  configure: { supports: { style: true } },
+  configure: {
+    // component: { isContainer: true },
+    supports: { style: true }
+  },
 };

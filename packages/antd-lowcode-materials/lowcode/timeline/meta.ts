@@ -38,7 +38,16 @@ export default {
                   {
                     name: 'label',
                     title: '设置标签',
-                    setter: 'StringSetter',
+                    setter: ['StringSetter', 'SlotSetter', 'VariableSetter'],
+                  },
+                  {
+                    name: 'children',
+                    title: '内容',
+                    setter: [
+                      'StringSetter',
+                      'SlotSetter',
+                      'VariableSetter',
+                    ],
                   },
                   {
                     name: 'position',
