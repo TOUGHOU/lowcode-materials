@@ -1,6 +1,6 @@
 {
   "name": "@toughou/antd-lowcode-materials",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "Antd for LowCode",
   "main": "lib/index.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "lowcode/"
   ],
   "devDependencies": {
-    "@alib/build-scripts": "^0.1.23",
-    "@alifd/build-plugin-lowcode": "^0.3.8",
+    "@alib/build-scripts": "^0.1.3",
+    "@alifd/build-plugin-lowcode": "^0.3.0",
     "@ant-design/icons": "^4.7.0",
     "@types/lodash": "^4.14.181",
     "@types/react": "^18.0.1",
@@ -41,17 +41,12 @@
       "name": "金禅"
     }
   ],
-  "dependencies": {
-    "@ant-design/icons": "^4.6.2",
-    "antd": "^4.24.7",
-    "moment": "^2.29.1"
-  },
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
   "componentConfig": {
-    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.3/build/lowcode/assets-prod.json"
+    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.4/build/lowcode/assets-prod.json"
   },
   "license": "MIT",
   "homepage": "https://unpkg.com/@alilc/antd-lowcode-materials@1.2.1/build/index.html"
