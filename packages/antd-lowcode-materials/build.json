@@ -1,5 +1,6 @@
 {
   "sourceMap": false,
+  "libraryTarget": "umd",
   "alias": {
     "@": "./src",
     "@components": "./src/components"

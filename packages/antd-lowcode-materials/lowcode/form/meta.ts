@@ -20,6 +20,13 @@ export default {
       supportVariable: true
     },
     {
+      name: 'initialValues',
+      title: { label: '表单数初始值', tip: 'initialValues | 表单数初始值' },
+      propType: 'object',
+      setter: 'JsonSetter',
+      supportVariable: true
+    },
+    {
       name: 'values',
       title: { label: '表单数据源', tip: '表单数据源' },
       propType: 'object',
@@ -28,12 +35,21 @@ export default {
     },
     {
       name: 'colon',
+      title: { label: '禁用表单', tip: '设置表单组件禁用，仅对 antd 组件有效' },
+      propType: 'bool',
+      defaultValue: true,
+      setter: 'BoolSetter',
+      supportVariable: true
+    },
+    {
+      name: 'disabled',
       title: { label: '展示冒号', tip: '' },
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter',
       supportVariable: true
     },
+
     {
       name: 'hideRequiredMark',
       title: { label: '隐藏必填标记', tip: '隐藏必填标记' },
