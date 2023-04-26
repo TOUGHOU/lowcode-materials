@@ -36,6 +36,10 @@ module.exports = {
           prod: `https://alifd.alicdn.com/npm/${name}@${version}`,
           daily: `https://alifd.alicdn.com/npm/${name}@${version}`,
         },
+        "externals": {
+          "react": "var window.React",
+          "react-dom": "var window.ReactDOM",
+        },
         builtinAssets: [
           {
             packages: [

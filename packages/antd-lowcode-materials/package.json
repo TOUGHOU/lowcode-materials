@@ -51,7 +51,7 @@
     "react-dom": "^16.0.0"
   },
   "componentConfig": {
-    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.2/build/lowcode/assets-prod.json"
+    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.3/build/lowcode/assets-prod.json"
   },
   "license": "MIT",
   "homepage": "https://unpkg.com/@alilc/antd-lowcode-materials@1.2.1/build/index.html"
