@@ -4,5 +4,11 @@
     "@": "./src",
     "@components": "./src/components"
   },
+  "externals": {
+    "react": "var window.React",
+    "react-dom": "var window.ReactDOM",
+    "moment": "var window.moment",
+    "lodash": "var window._"
+  },
   "plugins": [["build-plugin-component"]]
 }
