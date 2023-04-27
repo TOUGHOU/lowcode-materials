@@ -13,7 +13,7 @@ export default [
           {
             key: 'item-i5wd',
             category: 'Menu.Item',
-            children: '菜单名',
+            label: '菜单名',
           },
         ],
       },

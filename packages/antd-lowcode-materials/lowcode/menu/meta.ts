@@ -27,7 +27,7 @@ export default {
                     initialValue: (val) => val || uuid(),
                   },
                   {
-                    name: 'children',
+                    name: 'label',
                     title: '菜单名称',
                     setter: 'StringSetter',
                   },
@@ -67,16 +67,17 @@ export default {
                 ],
               },
             },
-            initialValue: () => {
-              return {
-                key: 'item-' + uuid(),
-                category: 'Menu.Item',
-                children: '菜单名',
-              };
-            },
+            // initialValue: () => {
+            //   return {
+            //     key: 'item-' + uuid(),
+            //     category: 'Menu.Item',
+            //     children: '菜单名',
+            //   };
+            // },
           },
         },
       },
+      supportVariable: true,
       extraProps: itemsExtraProps,
     },
     {

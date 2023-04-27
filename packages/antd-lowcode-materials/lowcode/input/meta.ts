@@ -35,7 +35,6 @@ export default {
       name: 'disabled',
       title: { label: '是否禁用', tip: '是否为禁用状态' },
       propType: 'bool',
-      defaultValue: false,
       setter: 'BoolSetter',
     },
     {

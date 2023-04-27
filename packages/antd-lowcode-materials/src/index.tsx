@@ -147,3 +147,6 @@ export { default as Select } from './components/select'
 export { default as Cascader } from './components/cascader';
 
 export { default as AutoComplete } from './components/auto-complete';
+
+export { default as RichEditor } from './components/rich-editor';
+

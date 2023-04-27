@@ -35,17 +35,15 @@ export default {
     },
     {
       name: 'colon',
-      title: { label: '禁用表单', tip: '设置表单组件禁用，仅对 antd 组件有效' },
+      title: { label: '展示冒号', tip: '' },
       propType: 'bool',
-      defaultValue: true,
       setter: 'BoolSetter',
       supportVariable: true
     },
     {
       name: 'disabled',
-      title: { label: '展示冒号', tip: '' },
+      title: { label: '禁用表单', tip: '设置表单组件禁用，仅对 antd 组件有效' },
       propType: 'bool',
-      defaultValue: true,
       setter: 'BoolSetter',
       supportVariable: true
     },
@@ -54,7 +52,6 @@ export default {
       name: 'hideRequiredMark',
       title: { label: '隐藏必填标记', tip: '隐藏必填标记' },
       propType: 'bool',
-      defaultValue: false,
       setter: 'BoolSetter',
       supportVariable: true
     },
@@ -162,7 +159,6 @@ export default {
         },
       },
       propType: { type: 'oneOf', value: ['left', 'right'] },
-      defaultValue: 'right',
     },
     {
       name: 'layout',
@@ -187,7 +183,6 @@ export default {
         },
       },
       propType: { type: 'oneOf', value: ['horizontal', 'vertical', 'inline'] },
-      defaultValue: 'horizontal',
     },
     {
       name: 'name',
@@ -206,7 +201,6 @@ export default {
         tip: '当字段被删除时保留字段值',
       },
       propType: 'bool',
-      defaultValue: true,
       setter: 'BoolSetter',
       supportVariable: true
     },
@@ -217,7 +211,6 @@ export default {
         tip: '提交失败自动滚动到第一个错误字段',
       },
       propType: 'bool',
-      defaultValue: true,
       setter: 'BoolSetter',
       supportVariable: true
     },
@@ -247,7 +240,6 @@ export default {
           ],
         },
       },
-      defaultValue: 'middle',
     },
     {
       name: 'validateMessages',
@@ -348,6 +340,7 @@ export default {
             'Datepicker',
             'Rate',
             'Transfer',
+            'RichEditor'
           ];
 
           if (
@@ -355,7 +348,7 @@ export default {
             !dragment.componentMeta ||
             !dragment.componentMeta.npm ||
             !dragment.componentMeta.npm.package ||
-            dragment.componentMeta.npm.package.indexOf('@alilc/antd-lowcode-materials') === -1 ||
+            dragment.componentMeta.npm.package.indexOf('@toughou/antd-lowcode-materials') === -1 ||
             comps.every((comp) => dragment.componentName.indexOf(comp) === -1)
           ) {
             return;

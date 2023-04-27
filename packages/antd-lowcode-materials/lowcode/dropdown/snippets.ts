@@ -27,7 +27,6 @@ export default [
                     key: 'timeLinei5wd',
                     category: 'Item',
                     title: '菜单名',
-                    children: '菜单名',
                   },
                 },
               ],
