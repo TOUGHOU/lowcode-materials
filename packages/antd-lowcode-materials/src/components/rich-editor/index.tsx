@@ -38,7 +38,7 @@ const RichEditor = ({ onChange, value, style, readOnly, ...restProps }) => {
   }, [editor]);
 
   useEffect(() => {
-    editor?.disable();
+    editor?.disable?.();
   }, [readOnly]);
 
   return (
