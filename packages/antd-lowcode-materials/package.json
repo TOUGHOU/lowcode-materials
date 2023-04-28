@@ -33,6 +33,7 @@
     "build-plugin-component": "^1.10.0",
     "build-plugin-moment-locales": "^0.1.0",
     "lodash": "^4.17.21",
+    "prettier": "^2.8.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "style-loader": "^2.0.0",
@@ -45,7 +46,8 @@
     "react-dom": "^16.0.0"
   },
   "componentConfig": {
-    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.5/build/lowcode/assets-prod.json"
+    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.6/build/lowcode/assets-prod.json"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://unpkg.com/@toughou/antd-lowcode-materials@1.2.6/build/index.html"
 }

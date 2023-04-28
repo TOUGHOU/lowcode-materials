@@ -25,7 +25,7 @@ const editorConfig: Partial<IEditorConfig> = {
   autoFocus: false,
 };
 
-const RichEditor = ({ onChange, value, style, ...restProps }) => {
+const RichEditor = ({ onChange, value, style, readOnly, ...restProps }) => {
   const [editor, setEditor] = useState<IDomEditor | null>(null); // 存储 editor 实例
 
   // 及时销毁 editor ，重要！
@@ -36,6 +36,10 @@ const RichEditor = ({ onChange, value, style, ...restProps }) => {
       setEditor(null);
     };
   }, [editor]);
+
+  useEffect(() => {
+    editor?.disable();
+  }, [readOnly]);
 
   return (
     <div style={style}>
