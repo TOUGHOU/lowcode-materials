@@ -1,6 +1,6 @@
 {
   "name": "@toughou/antd-lowcode-materials",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Antd for LowCode",
   "main": "lib/index.js",
   "scripts": {
@@ -45,9 +45,9 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
+  "license": "MIT",
+  "homepage": "https://unpkg.com/@toughou/antd-lowcode-materials@1.2.6/build/index.html",
   "componentConfig": {
     "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.7/build/lowcode/assets-prod.json"
-  },
-  "license": "MIT",
-  "homepage": "https://unpkg.com/@toughou/antd-lowcode-materials@1.2.6/build/index.html"
+  }
 }

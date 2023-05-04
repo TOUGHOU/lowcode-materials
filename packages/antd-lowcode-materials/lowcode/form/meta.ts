@@ -1,5 +1,5 @@
 import snippets from './snippets';
-import { uuid } from '../_utils/utils'
+import { uuid } from '../_utils/utils';
 
 export default {
   snippets,
@@ -11,41 +11,41 @@ export default {
       name: 'ref',
       title: {
         label: 'ref',
-        tip: 'ref | 通过 this.$(\'xxx\') 获取到组件实例',
+        tip: "ref | 通过 this.$('xxx') 获取到组件实例",
       },
       defaultValue: () => {
-        return `form_${uuid()}`
+        return `form_${uuid()}`;
       },
       setter: 'StringSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'initialValues',
       title: { label: '表单数初始值', tip: 'initialValues | 表单数初始值' },
       propType: 'object',
       setter: 'JsonSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'values',
       title: { label: '表单数据源', tip: '表单数据源' },
       propType: 'object',
       setter: 'JsonSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'colon',
       title: { label: '展示冒号', tip: '' },
       propType: 'bool',
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'disabled',
       title: { label: '禁用表单', tip: '设置表单组件禁用，仅对 antd 组件有效' },
       propType: 'bool',
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
 
     {
@@ -53,7 +53,7 @@ export default {
       title: { label: '隐藏必填标记', tip: '隐藏必填标记' },
       propType: 'bool',
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       type: 'group',
@@ -192,7 +192,7 @@ export default {
       },
       propType: 'string',
       setter: 'StringSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'preserve',
@@ -202,7 +202,7 @@ export default {
       },
       propType: 'bool',
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'scrollToFirstError',
@@ -212,7 +212,7 @@ export default {
       },
       propType: 'bool',
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'size',
@@ -340,7 +340,8 @@ export default {
             'Datepicker',
             'Rate',
             'Transfer',
-            'RichEditor'
+            'Cascader',
+            'RichEditor',
           ];
 
           if (

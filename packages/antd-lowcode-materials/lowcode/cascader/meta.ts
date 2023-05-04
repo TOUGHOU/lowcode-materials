@@ -32,21 +32,21 @@ export default {
       title: { label: '支持清除', tip: '是否允许清除' },
       propType: 'bool',
       defaultValue: true,
-      setter: 'BoolSetter'
+      setter: 'BoolSetter',
     },
     {
       name: 'autoFocus',
       title: { label: '自动聚焦', tip: '自动获取焦点' },
       propType: 'bool',
       defaultValue: false,
-      setter: 'BoolSetter'
+      setter: 'BoolSetter',
     },
     {
       name: 'bordered',
       title: { label: '显示边框', tip: '是否有边框' },
       propType: 'bool',
       defaultValue: true,
-      setter: 'BoolSetter'
+      setter: 'BoolSetter',
     },
     {
       name: 'changeOnSelect',
@@ -56,20 +56,20 @@ export default {
       },
       propType: 'bool',
       defaultValue: false,
-      setter: 'BoolSetter'
+      setter: 'BoolSetter',
     },
     {
       name: 'className',
       title: { label: '自定义类名', tip: '自定义类名' },
       propType: 'string',
-      setter: 'StringSetter'
+      setter: 'StringSetter',
     },
     {
       name: 'disabled',
       title: { label: '是否禁用', tip: '是否为禁用状态' },
       propType: 'bool',
       defaultValue: false,
-      setter: 'BoolSetter'
+      setter: 'BoolSetter',
     },
     {
       name: 'expandTrigger',
@@ -80,13 +80,13 @@ export default {
       name: 'notFoundContent',
       title: { label: '无数据展示', tip: '无数据' },
       propType: 'string',
-      setter: 'StringSetter'
+      setter: 'StringSetter',
     },
     {
       name: 'placeholder',
       title: { label: '输入框占位文本', tip: '输入框占位文本' },
       propType: 'string',
-      setter: 'StringSetter'
+      setter: 'StringSetter',
     },
     {
       name: 'placement',
@@ -101,7 +101,7 @@ export default {
       title: { label: '支持搜索', tip: '在选择框中显示搜索框' },
       propType: 'bool',
       defaultValue: false,
-      setter: 'BoolSetter'
+      setter: 'BoolSetter',
     },
     {
       name: 'size',
@@ -129,6 +129,36 @@ export default {
       defaultValue: 'middle',
     },
     {
+      name: 'fieldNames',
+      title: { label: '字段映射', tip: '自定义节点 label、value、children 的字段' },
+      setter: {
+        componentName: 'ObjectSetter',
+        props: {
+          config: {
+            items: [
+              {
+                name: 'label',
+                title: '选项名',
+                setter: ['StringSetter', 'VariableSetter'],
+                isRequired: true,
+              },
+              {
+                name: 'value',
+                title: '选项值',
+                setter: ['StringSetter', 'NumberSetter', 'VariableSetter'],
+                isRequired: true,
+              },
+              {
+                name: 'children',
+                title: '是否禁用',
+                setter: ['BoolSetter', 'VariableSetter'],
+              },
+            ],
+          },
+        },
+      },
+    },
+    {
       name: 'style',
       title: { label: '自定义样式', tip: '自定义样式' },
       propType: 'object',
@@ -136,6 +166,14 @@ export default {
     {
       name: 'onChange',
       title: { label: '选择完成后的回调', tip: '选择完成后的回调' },
+      propType: 'func',
+    },
+    {
+      name: 'loadData',
+      title: {
+        label: '动态加载选项',
+        tip: 'loadData 用于动态加载选项，无法与 showSearch 一起使用	',
+      },
       propType: 'func',
     },
     {
@@ -157,6 +195,11 @@ export default {
           name: 'onPopupVisibleChange',
           template:
             "onPopupVisibleChange(value,selectedOptions,${extParams}){\n// 显示/隐藏浮层的回调\nconsole.log('onPopupVisibleChange', value, selectedOptions);}",
+        },
+        {
+          name: 'onSearch',
+          template:
+            "onSearch(value,selectedOptions,${extParams}){\n// 显示/隐藏浮层的回调\nconsole.log('onSearch', value, selectedOptions);}",
         },
       ],
     },

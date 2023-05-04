@@ -1,4 +1,4 @@
-const { name, version } = require("./package.json");
+const { name, version } = require('./package.json');
 
 const library = 'AntdLowcode';
 
@@ -6,7 +6,7 @@ module.exports = {
   sourceMap: false,
   alias: {
     '@': './src',
-    lowcode: './lowcode'
+    lowcode: './lowcode',
   },
   plugins: [
     [
@@ -33,8 +33,8 @@ module.exports = {
         entryPath: 'src/index.tsx',
         categories: ['通用', '导航', '信息输入', '信息展示', '信息反馈'],
         baseUrl: {
-          prod: `https://alifd.alicdn.com/npm/${name}@${version}`,
-          daily: `https://alifd.alicdn.com/npm/${name}@${version}`,
+          prod: `https://unpkg.com/${name}@${version}`,
+          daily: `https://unpkg.com/${name}@${version}`,
         },
         builtinAssets: [
           {
