@@ -48,6 +48,6 @@
   "license": "MIT",
   "homepage": "https://unpkg.com/@toughou/antd-lowcode-materials@1.2.6/build/index.html",
   "componentConfig": {
-    "materialSchema": "https://alifd.alicdn.com/npm/@toughou/antd-lowcode-materials@1.2.7/build/lowcode/assets-prod.json"
+    "materialSchema": "https://unpkg.com/@toughou/antd-lowcode-materials@1.2.8/build/lowcode/assets-prod.json"
   }
 }

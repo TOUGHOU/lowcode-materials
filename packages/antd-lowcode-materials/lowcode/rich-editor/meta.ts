@@ -41,6 +41,16 @@ const RichEditor = {
       setter: 'BoolSetter',
       supportVariable: true,
     },
+    // {
+    //   name: 'MENU_CONF',
+    //   setter: 'ObjectSetter'
+    // },
+    {
+      name: 'MENU_CONF.uploadImage.customUpload',
+      title: '自定义上传',
+      setter: 'FunctionSetter',
+    },
+    // MENU_CONF
   ],
   configure: {
     supports: {

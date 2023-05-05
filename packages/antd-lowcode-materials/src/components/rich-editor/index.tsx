@@ -7,8 +7,9 @@ import type { IDomEditor, IEditorConfig } from '@wangeditor/editor';
 
 const toolbarConfig = {
   excludeKeys: [
-    'group-image',
+    // 'group-image',
     'group-video',
+    'video',
     'group-more-style',
     'insertTable',
     'codeBlock',
@@ -17,6 +18,8 @@ const toolbarConfig = {
     'insertLink',
     'blockquote',
     'divider',
+    'uploadVideo',
+    'insertVideo',
     'fullScreen',
   ],
 };
@@ -32,14 +35,17 @@ const RichEditor = ({ onChange, value, style, readOnly, ...restProps }) => {
   useEffect(() => {
     return () => {
       if (editor == null) return;
+
       editor.destroy();
       setEditor(null);
     };
   }, [editor]);
 
   useEffect(() => {
-    editor?.disable?.();
-  }, [readOnly]);
+    if (readOnly === true && editor) {
+      editor.disable();
+    }
+  }, [readOnly, editor]);
 
   return (
     <div style={style}>
@@ -53,7 +59,7 @@ const RichEditor = ({ onChange, value, style, readOnly, ...restProps }) => {
         defaultConfig={{ ...editorConfig, ...restProps }}
         value={value}
         onChange={(editorInstance) => {
-          onChange(editorInstance?.getHtml());
+          onChange?.(editorInstance?.getHtml());
         }}
         onCreated={setEditor}
         mode="default"
