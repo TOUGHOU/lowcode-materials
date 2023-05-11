@@ -50,6 +50,60 @@ export default {
         },
       },
     },
+    {
+      name: 'xs',
+      title: { label: 'xs', tip: '屏幕 < 576px 响应式栅格，可为栅格数或一个包含其他属性的对象' },
+      propType: 'number',
+      setter: {
+        componentName: 'NumberSetter',
+        supportVariable: true,
+      },
+    },
+    {
+      name: 'sm',
+      title: { label: 'sm', tip: '屏幕 ≥ 576px 响应式栅格，可为栅格数或一个包含其他属性的对象' },
+      propType: 'number',
+      setter: {
+        componentName: 'NumberSetter',
+        supportVariable: true,
+      },
+    },
+    {
+      name: 'md',
+      title: { label: 'md', tip: '屏幕 ≥ 768px 响应式栅格，可为栅格数或一个包含其他属性的对象' },
+      propType: 'number',
+      setter: {
+        componentName: 'NumberSetter',
+        supportVariable: true,
+      },
+    },
+    {
+      name: 'lg',
+      title: { label: 'lg', tip: '屏幕 ≥ 992px 响应式栅格，可为栅格数或一个包含其他属性的对象' },
+      propType: 'number',
+      setter: {
+        componentName: 'NumberSetter',
+        supportVariable: true,
+      },
+    },
+    {
+      name: 'xl',
+      title: { label: 'xl', tip: '屏幕 ≥ 1200px 响应式栅格，可为栅格数或一个包含其他属性的对象' },
+      propType: 'number',
+      setter: {
+        componentName: 'NumberSetter',
+        supportVariable: true,
+      },
+    },
+    {
+      name: 'xxl',
+      title: { label: 'xxl', tip: '屏幕 ≥ 1600px 响应式栅格，可为栅格数或一个包含其他属性的对象' },
+      propType: 'number',
+      setter: {
+        componentName: 'NumberSetter',
+        supportVariable: true,
+      },
+    },
   ],
   configure: {
     component: { isContainer: true, nestingRule: { parentWhitelist: ['Row'] } },
