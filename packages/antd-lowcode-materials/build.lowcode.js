@@ -62,12 +62,11 @@ module.exports = {
               },
               {
                 package: 'antd',
-                version: '4.19.2',
+                version: '4.23.0',
                 urls: [
-                  `https://unpkg.com/@toughou/antd@4.19.2/dist/antd.min.js`,
-                  `https://unpkg.com/@toughou/antd@4.19.2/dist/antd.min.css`,
+                  `//g.alicdn.com/code/lib/antd/4.23.0/antd.min.js`,
+                  `//g.alicdn.com/code/lib/antd/4.23.0/antd.min.css`,
                 ],
-                library: 'antd',
               },
             ],
             components: [],

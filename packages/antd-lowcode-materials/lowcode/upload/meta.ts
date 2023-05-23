@@ -37,13 +37,9 @@ export default {
                         setter: {
                           componentName: 'SelectSetter',
                           props: {
-                            options: [
-                              'error',
-                              'success',
-                              'done',
-                              'uploading',
-                              'removed',
-                            ].map((v) => ({ label: v, value: v })),
+                            options: ['error', 'success', 'done', 'uploading', 'removed'].map(
+                              (v) => ({ label: v, value: v }),
+                            ),
                           },
                         },
                       },
@@ -95,13 +91,9 @@ export default {
                         setter: {
                           componentName: 'SelectSetter',
                           props: {
-                            options: [
-                              'error',
-                              'success',
-                              'done',
-                              'uploading',
-                              'removed',
-                            ].map((v) => ({ label: v, value: v })),
+                            options: ['error', 'success', 'done', 'uploading', 'removed'].map(
+                              (v) => ({ label: v, value: v }),
+                            ),
                           },
                         },
                       },
@@ -203,8 +195,7 @@ export default {
           name: 'listType',
           title: {
             label: '上传列表样式',
-            tip:
-              'listType | 上传列表的内建样式，支持三种基本样式 `text`, `picture` 和 `picture-card`',
+            tip: 'listType | 上传列表的内建样式，支持三种基本样式 `text`, `picture` 和 `picture-card`',
           },
           propType: {
             type: 'oneOf',
@@ -396,9 +387,17 @@ export default {
         },
       ],
     },
+
+    {
+      name: 'children',
+      propType: 'node',
+      setter: 'SlotSetter',
+      supportVariable: true,
+      // setter: 'NumberSetter',
+    },
   ],
   configure: {
-    component: { isContainer: true },
+    // component: { isContainer: true },
     supports: {
       style: true,
       events: [

@@ -1,13 +1,5 @@
 module.exports = {
   componentName: 'Slot',
-  npm: {
-    package: '@alilc/antd-lowcode-materials',
-    version: 'latest',
-    exportName: 'Slot',
-    main: '',
-    destructuring: true,
-    subName: '',
-  },
   configure: {
     props: [
       {

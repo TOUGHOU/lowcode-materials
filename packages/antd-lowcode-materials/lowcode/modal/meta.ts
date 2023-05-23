@@ -26,7 +26,14 @@ export default {
       title: { label: '是否可见', tip: '对话框是否可见' },
       propType: 'bool',
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
+    },
+    {
+      name: 'visible',
+      title: { label: '是否可见', tip: '[兼容配置] 对话框是否可见' },
+      propType: 'bool',
+      setter: 'BoolSetter',
+      supportVariable: true,
     },
     {
       name: 'centered',
@@ -34,7 +41,7 @@ export default {
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'closable',
@@ -42,7 +49,7 @@ export default {
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'closeIcon',
@@ -55,7 +62,7 @@ export default {
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'destroyOnClose',
@@ -63,7 +70,7 @@ export default {
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'forceRender',
@@ -71,7 +78,7 @@ export default {
       propType: 'bool',
       defaultValue: false,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'keyboard',
@@ -79,7 +86,7 @@ export default {
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'mask',
@@ -87,7 +94,7 @@ export default {
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'maskClosable',
@@ -95,14 +102,14 @@ export default {
       propType: 'bool',
       defaultValue: true,
       setter: 'BoolSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'zIndex',
       title: { label: 'z-index', tip: '设置 Modal 的 `z-index`' },
       propType: 'number',
       setter: 'NumberSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'width',
@@ -204,7 +211,7 @@ export default {
       title: { label: '外层容器类名', tip: '对话框外层容器的类名' },
       propType: 'string',
       setter: 'StringSetter',
-      supportVariable: true
+      supportVariable: true,
     },
     {
       name: 'getContainer',

@@ -18,6 +18,12 @@ export default {
           setter: 'BoolSetter',
         },
         {
+          name: 'visible',
+          title: { label: '是否可见', tip: '[兼容配置] visible | Drawer 是否可见' },
+          propType: 'bool',
+          setter: 'BoolSetter',
+        },
+        {
           name: 'title',
           title: { label: '标题', tip: 'title | 标题' },
           propType: { type: 'oneOfType', value: ['string', 'node'] },
@@ -207,7 +213,7 @@ export default {
                   componentName: 'Icon',
                   props: {
                     type: 'CloseOutlined',
-                    size: 16
+                    size: 16,
                   },
                 },
               ],
